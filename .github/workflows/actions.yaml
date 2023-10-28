@@ -13,12 +13,10 @@ jobs:   #here we specify the jobs - We could have multiple jobs
     runs-on: ubuntu-latest   #runner: select a machine to use
 
     steps:
-      - uses: actions/checkout@v2
-      - name: set up JDK 11
-        uses: actions/setup-java@v3
+      - uses: actions/checkout@v1
+      - uses: actions/setup-java@v1
         with:
-          distribution: 'temurin'
-          java-version: '17'
+          java-version: '11'
       - uses: subosito/flutter-action@v1
         with:
           channel: 'stable'
