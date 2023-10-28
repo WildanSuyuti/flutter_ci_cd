@@ -1,5 +1,5 @@
 
-name: Flutter
+name: Flutter CI/CD
 
 on:  #events (push and pull_request)
   push: 
